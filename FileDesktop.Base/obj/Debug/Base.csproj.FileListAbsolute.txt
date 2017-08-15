@@ -1,9 +1,0 @@
-G:\Github\FileDesktop\Base\bin\Debug\Base.dll
-G:\Github\FileDesktop\Base\bin\Debug\Base.pdb
-G:\Github\FileDesktop\Base\bin\Debug\Hake.Extension.ValueRecord.dll
-G:\Github\FileDesktop\Base\bin\Debug\Hake.Extension.ValueRecord.pdb
-G:\Github\FileDesktop\Base\obj\Debug\Base.csprojResolveAssemblyReference.cache
-G:\Github\FileDesktop\Base\obj\Debug\Base.dll
-G:\Github\FileDesktop\Base\obj\Debug\Base.pdb
-G:\Github\FileDesktop\build\any\debug\Base.dll
-G:\Github\FileDesktop\build\any\debug\Base.pdb

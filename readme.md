@@ -1,42 +1,61 @@
+# FileDesktop
+
+Show your files and folders in desktop
+
 ## Options
-Configuration file `config.json` should be put to working directory of this program.
+Path to configuration file `config.json` should be passed to the program when it starts as the first argument. Or the path `"(working directory)\config.json"` will be used.
+
+Options in the configuration file are used to determine what items should be displayed in the main interface.
+
+Configurable options are introduced below.
 
 ### Object Model
 ```CSharp
-class ScanOption {
-    string Path;
-    int Depth;
-    FilterOption Include;
-    FilterOption Exclude;
+interface IConfiguration
+{
+    // patterns that used to exclude files and folders by name or path
+    ScanFilterOptions GlobalExclude {get;}
+
+    // list of explicitly included files or folders
+    ItemIncludeOptions IncludedItems {get;}
+
+    // scan options that claim the operations how the program scans items under specific directories
+    List<DirectoryScanOptions> ScanDirectories {get;}
 }
-class FilterOption {
-    List<Regex> File;
-    List<Regex> Directory;
-    List<Regex> Common;
-    List<Regex> Path;
+
+class ScanFilterOptions {
+    // patterns that filter files by FileName
+    IReadOnlyList<Regex> FileFilters {get;}
+
+    // patterns that filter directories by DirectoryName
+    IReadOnlyList<Regex> DirectoryFilters {get;}
+
+    // patterns that filter files or directories by its name
+    IReadOnlyList<Regex> CommonFilters {get;}
+
+    // patterns that filter items by the full path
+    IReadOnlyList<Regex> PathFilters {get;}
 }
-class IncludeOption {
-    List<string> Files;
-    List<string> Directories;
+
+class ItemIncludeOptions {
+    // path to directories that should be included
+    IReadOnlyList<string> Directories {get;}
+
+    // path to files
+    IReadOnlyList<string> Files {get;}
 }
-class Items {
-    List<ScanOption> Scan;
-    IncludeOption Include;
-    FilterOption Exclude
+
+class DirectoryScanOptions {
+    // path of scanned directory
+    string DirectoryPath {get;}
+
+    // depth that the program scans within the folder
+    int ScanDepth {get;}
+
+    // patterns that determine excluded items
+    ScanFilterOptions Excludes {get;}
+
+    // patterns that explicitly include items that may be ignored by exclude options
+    ScanFilterOptions Includes {get;}
 }
 ```
-### Items
-Contains configurations.
-### FilterOption
-Determines how to filtrate directories and files.
-
-- Regular expressiones in `file` are applied to name of each file.
-- Regular expressiones in `directories` are applied to name of each directory.
-- Regular expressiones in `common` are applied to name of both files and directories.
-- Regular expressiones in `path` are applied to full path of files or directories.
-
-`FilterOption` can be used as either `include` option or `exclude` option.
-### ScanOption
-
-### IncludeOption
-Which files and directories should be added directly.

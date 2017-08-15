@@ -1,3 +1,0 @@
-G:\Github\FileDesktop\build\x86\release\Base.dll
-G:\Github\FileDesktop\FileDesktop.Base\obj\x86\Release\FileDesktop.Base.csprojResolveAssemblyReference.cache
-G:\Github\FileDesktop\FileDesktop.Base\obj\x86\Release\Base.dll

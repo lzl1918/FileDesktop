@@ -1,9 +1,0 @@
-G:\Github\FileDesktop\ConsoleTest\bin\x64\Release\ConsoleTest.exe.config
-G:\Github\FileDesktop\ConsoleTest\bin\x64\Release\ConsoleTest.exe
-G:\Github\FileDesktop\ConsoleTest\bin\x64\Release\ConsoleTest.pdb
-G:\Github\FileDesktop\ConsoleTest\bin\x64\Release\Base.dll
-G:\Github\FileDesktop\ConsoleTest\bin\x64\Release\Hake.Extension.ValueRecord.dll
-G:\Github\FileDesktop\ConsoleTest\bin\x64\Release\Hake.Extension.ValueRecord.pdb
-G:\Github\FileDesktop\ConsoleTest\obj\x64\Release\ConsoleTest.csprojResolveAssemblyReference.cache
-G:\Github\FileDesktop\ConsoleTest\obj\x64\Release\ConsoleTest.exe
-G:\Github\FileDesktop\ConsoleTest\obj\x64\Release\ConsoleTest.pdb

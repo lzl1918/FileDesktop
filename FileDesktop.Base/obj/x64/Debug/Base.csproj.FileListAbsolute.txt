@@ -1,5 +1,0 @@
-G:\Github\FileDesktop\build\x64\debug\Base.dll
-G:\Github\FileDesktop\build\x64\debug\Base.pdb
-G:\Github\FileDesktop\Base\obj\x64\Debug\Base.csprojResolveAssemblyReference.cache
-G:\Github\FileDesktop\Base\obj\x64\Debug\Base.dll
-G:\Github\FileDesktop\Base\obj\x64\Debug\Base.pdb

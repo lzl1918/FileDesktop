@@ -11,7 +11,7 @@ namespace Base.Configurations
 {
     public sealed class ScanFilterOptions
     {
-        public bool IsDefault { get; private set; }
+        internal bool IsDefault { get; private set; }
         public IReadOnlyList<Regex> FileFilters { get; }
         public IReadOnlyList<Regex> DirectoryFilters { get; }
         public IReadOnlyList<Regex> CommonFilters { get; }

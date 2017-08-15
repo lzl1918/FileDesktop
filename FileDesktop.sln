@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.14
+VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileDesktop", "FileDesktop\FileDesktop.csproj", "{ECBD7701-AFAF-4A69-9E21-1EA64EA21A01}"
 EndProject
@@ -10,8 +10,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hake.Extension.ValueRecord", "Extensions\ValueRecord\ValueRecord\Hake.Extension.ValueRecord.csproj", "{96C2A6D8-B279-4F4A-97C3-A8123DA05F9A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileDesktop.Base", "FileDesktop.Base\FileDesktop.Base.csproj", "{A3A6CCB2-C5F8-413D-A36A-5C9974157981}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTest", "ConsoleTest\ConsoleTest.csproj", "{E716FA91-2C50-4AAF-AD53-E07DA6B314F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,18 +57,6 @@ Global
 		{A3A6CCB2-C5F8-413D-A36A-5C9974157981}.Release|x64.Build.0 = Release|x64
 		{A3A6CCB2-C5F8-413D-A36A-5C9974157981}.Release|x86.ActiveCfg = Release|x86
 		{A3A6CCB2-C5F8-413D-A36A-5C9974157981}.Release|x86.Build.0 = Release|x86
-		{E716FA91-2C50-4AAF-AD53-E07DA6B314F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E716FA91-2C50-4AAF-AD53-E07DA6B314F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E716FA91-2C50-4AAF-AD53-E07DA6B314F7}.Debug|x64.ActiveCfg = Debug|x64
-		{E716FA91-2C50-4AAF-AD53-E07DA6B314F7}.Debug|x64.Build.0 = Debug|x64
-		{E716FA91-2C50-4AAF-AD53-E07DA6B314F7}.Debug|x86.ActiveCfg = Debug|x86
-		{E716FA91-2C50-4AAF-AD53-E07DA6B314F7}.Debug|x86.Build.0 = Debug|x86
-		{E716FA91-2C50-4AAF-AD53-E07DA6B314F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E716FA91-2C50-4AAF-AD53-E07DA6B314F7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E716FA91-2C50-4AAF-AD53-E07DA6B314F7}.Release|x64.ActiveCfg = Release|x64
-		{E716FA91-2C50-4AAF-AD53-E07DA6B314F7}.Release|x64.Build.0 = Release|x64
-		{E716FA91-2C50-4AAF-AD53-E07DA6B314F7}.Release|x86.ActiveCfg = Release|x86
-		{E716FA91-2C50-4AAF-AD53-E07DA6B314F7}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
