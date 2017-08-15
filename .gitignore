@@ -1,7 +1,5 @@
 \.vs
 \.vscode
-/.vs
-/.vscode
 
 *\bin
 *\obj
@@ -9,4 +7,3 @@
 */obj
 
 \build
-/build
