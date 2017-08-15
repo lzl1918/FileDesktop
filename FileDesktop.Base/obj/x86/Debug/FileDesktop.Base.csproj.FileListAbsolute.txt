@@ -1,0 +1,5 @@
+G:\Github\FileDesktop\build\x86\debug\Base.dll
+G:\Github\FileDesktop\build\x86\debug\Base.pdb
+G:\Github\FileDesktop\FileDesktop.Base\obj\x86\Debug\FileDesktop.Base.csprojResolveAssemblyReference.cache
+G:\Github\FileDesktop\FileDesktop.Base\obj\x86\Debug\Base.dll
+G:\Github\FileDesktop\FileDesktop.Base\obj\x86\Debug\Base.pdb

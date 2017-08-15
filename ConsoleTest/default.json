@@ -1,0 +1,19 @@
+﻿{
+  "items": {
+    "scan_directories": [
+      {
+        "path": "G:\\Github",
+        "depth": 2
+      }
+    ],
+    "include": {
+      "directories": [],
+      "files": []
+    },
+    "exclude": {
+      "file_pattern": [],
+      "directory_pattern": [],
+      "common_pattern": ["^\\.\\w+$"]
+    }
+  }
+}

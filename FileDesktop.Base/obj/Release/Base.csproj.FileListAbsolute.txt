@@ -1,0 +1,3 @@
+G:\Github\FileDesktop\build\any\release\Base.dll
+G:\Github\FileDesktop\Base\obj\Release\Base.csprojResolveAssemblyReference.cache
+G:\Github\FileDesktop\Base\obj\Release\Base.dll

@@ -1,0 +1,19 @@
+﻿{
+  "scan": [
+    {
+      "path": "G:\\Github",
+      "depth": 2
+    }
+  ],
+  "include": {
+    "directories": [],
+    "files": []
+  },
+  "exclude": {
+    "file": [],
+    "directory": [],
+
+    // igonre name like '.gitignore', '.vs'
+    "common": [ "^\\.\\w+$" ]
+  }
+}

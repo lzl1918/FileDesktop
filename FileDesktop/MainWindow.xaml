@@ -1,0 +1,64 @@
+﻿<Window x:Class="FileDesktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FileDesktop"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="250"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Background="{x:Null}"
+        AllowsTransparency="True"
+        ShowInTaskbar="False">
+    <Grid Background="#AFFF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid>
+            <TextBox TextChanged="OnSearchBoxTextChanged" Background="#4FFF" Padding="2"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <ListView Name="listview_items" Background="Transparent" MouseDoubleClick="OnItemDoubleClicked" ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+                <ListView.ContextMenu>
+                    <ContextMenu>
+                        <MenuItem Header="Open containing folder" Click="OpenContainingFolderClicked"/>
+                        <MenuItem Header="Open in VSCode" Click="OpenInVSCodeClicked"/>
+                        <MenuItem Header="Open containing folder in VSCode" Click="OpenContainingFolderInVSCodeClicked"/>
+                    </ContextMenu>
+                </ListView.ContextMenu>
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListView.ItemContainerStyle>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Image Grid.RowSpan="2" Source="{Binding Icon}" Margin="0, 0, 4, 0"/>
+                            <StackPanel Grid.Column="1" FlowDirection="LeftToRight" Orientation="Horizontal">
+                                <TextBlock Text="{Binding DisplayName.HighlightBefore}"></TextBlock>
+                                <TextBlock Text="{Binding DisplayName.Highlighted}" FontWeight="Bold" Background="#6472"></TextBlock>
+                                <TextBlock Text="{Binding DisplayName.HighlightAfter}"></TextBlock>
+                            </StackPanel>
+                            <StackPanel Grid.Column="1" Grid.Row="1" FlowDirection="LeftToRight" Orientation="Horizontal">
+                                <TextBlock Text="{Binding DisplayPath.HighlightBefore}"></TextBlock>
+                                <TextBlock Text="{Binding DisplayPath.Highlighted}" FontWeight="Bold" Background="#6472"></TextBlock>
+                                <TextBlock Text="{Binding DisplayPath.HighlightAfter}"></TextBlock>
+                            </StackPanel>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </Grid>
+</Window>

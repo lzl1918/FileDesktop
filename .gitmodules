@@ -1,0 +1,3 @@
+[submodule "Extensions/ValueRecord"]
+	path = Extensions/ValueRecord
+	url = https://github.com/lzl1918/Hake.Extension.ValueRecord

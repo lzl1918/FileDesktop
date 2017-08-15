@@ -1,0 +1,31 @@
+﻿{
+  "scan": [
+      {
+        "path": "G:\\Github",
+        "depth": 65536,
+        "ignoreGlobalExclude": false,
+        "include": {
+          "file": ["\\.sln$"],
+          "directory": [],
+          "path": [],
+          "common": []
+        },
+        "exclude": {
+          "file": ["^"],
+          "directory": ["Extensions"],
+          "path": [],
+          "common": []
+        }
+      }
+    ],
+    "include": {
+      "directories": [],
+      "files": []
+    },
+    "exclude": {
+      "file": ["\\.dll$", "^~\\$.*\\.(docx?|xls?|pptx?)"],
+      "directory": [],
+      "path": [],
+      "common": ["^\\.\\w+$"]
+    }
+}

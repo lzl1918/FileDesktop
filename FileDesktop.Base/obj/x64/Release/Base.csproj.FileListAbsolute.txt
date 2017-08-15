@@ -1,0 +1,2 @@
+G:\Github\FileDesktop\build\x64\release\Base.dll
+G:\Github\FileDesktop\Base\obj\x64\Release\Base.dll
