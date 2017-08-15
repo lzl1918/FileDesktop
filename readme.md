@@ -2,12 +2,44 @@
 
 Show your files and folders in desktop
 
+## Watchers
+[FileSystemWatcher](https://msdn.microsoft.com/library/system.io.filesystemwatcher.aspx) is referenced to detect changes of file system to add or remove items in time.
+
+**Watched directory should not include the current program as subitem or any change of monitored content will not raise events.**
+
 ## Options
 Path to configuration file `config.json` should be passed to the program when it starts as the first argument. Or the path `"(working directory)\config.json"` will be used.
 
 Options in the configuration file are used to determine what items should be displayed in the main interface.
 
 Configurable options are introduced below.
+
+Sample of options can be referenced at [default.json](https://github.com/lzl1918/FileDesktop/blob/master/FileDesktop/default.json)
+
+[ConfigurationReader.cs](https://github.com/lzl1918/FileDesktop/blob/master/FileDesktop.Base/Configurations/ConfigurationReader.cs) shows the way that the options be read.
+
+
+#### default of include options
+Include all items
+```Json
+{
+    "file": [],
+    "directory": [],
+    "common": [ "^" ],
+    "path": []
+}
+```
+
+#### default of exclude options
+Exclude none item
+```Json
+{
+    "file": [],
+    "directory": [],
+    "common": [],
+    "path": []
+}
+```
 
 ### Object Model
 ```CSharp
