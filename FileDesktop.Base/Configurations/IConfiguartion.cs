@@ -7,7 +7,7 @@ namespace Base.Configurations
 {
     public interface IConfiguartion
     {
-        ScanFilterOptions GloabalExclude { get; }
+        ScanFilterOptions GlobalExcludes { get; }
         ItemIncludeOptions IncludeItems { get; }
         List<DirectoryScanOptions> ScanDirectories { get; }
 

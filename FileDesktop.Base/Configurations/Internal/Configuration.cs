@@ -12,7 +12,7 @@ namespace Base.Configurations
 {
     internal sealed class Configuration : IConfiguartion
     {
-        public ScanFilterOptions GloabalExclude { get; }
+        public ScanFilterOptions GlobalExcludes { get; }
 
         public ItemIncludeOptions IncludeItems { get; }
 
@@ -27,7 +27,7 @@ namespace Base.Configurations
             if (scanDirectories == null)
                 throw new ArgumentNullException(nameof(scanDirectories));
 
-            GloabalExclude = globalExclude;
+            GlobalExcludes = globalExclude;
             IncludeItems = includeItems;
             ScanDirectories = scanDirectories;
         }
