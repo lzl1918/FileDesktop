@@ -1,7 +1,12 @@
 \.vs
 \.vscode
+/.vs
+/.vscode
 
 *\bin
 *\obj
+*/bin
+*/obj
 
 \build
+/build
