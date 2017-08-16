@@ -1,6 +1,7 @@
 # FileDesktop
 
 Show your files and folders in desktop
+![demo](https://github.com/lzl1918/FileDesktop/blob/master/sample.png)
 
 ## Watchers
 [FileSystemWatcher](https://msdn.microsoft.com/library/system.io.filesystemwatcher.aspx) is referenced to detect changes of file system to add or remove items in time.
