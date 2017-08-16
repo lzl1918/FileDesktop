@@ -1,6 +1,7 @@
 # FileDesktop
 
 Show your files and folders in desktop
+
 ![demo](https://github.com/lzl1918/FileDesktop/blob/master/sample.png)
 
 ## Watchers
