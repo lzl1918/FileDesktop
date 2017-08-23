@@ -141,7 +141,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Extensions\ValueRecord\ValueRecord\Hake.Extension.ValueRecord.csproj">
+    <ProjectReference Include="..\Extensions\ValueRecord\Hake.Extension.ValueRecord\Hake.Extension.ValueRecord.csproj">
       <Project>{96c2a6d8-b279-4f4a-97c3-a8123da05f9a}</Project>
       <Name>Hake.Extension.ValueRecord</Name>
     </ProjectReference>
